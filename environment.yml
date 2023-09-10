@@ -268,4 +268,3 @@ dependencies:
   - zipp=3.16.2=pyhd8ed1ab_0
   - zlib=1.2.13=h4dc903c_0
   - zstd=1.5.5=hc035e20_0
-prefix: /Users/lukastheurer/opt/miniconda3/envs/summerschool
