@@ -24,7 +24,7 @@ Generative AI is at the frontier of artificial intelligence research and has bee
 1. **Basics of Time Series Analysis**
    - Use-Cases
    - Components: Trend, Seasonality & Error
-   - Decompoisiton Methos
+   - Decompoisiton Methods
    - Autocorellation
 
 
