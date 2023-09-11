@@ -35,12 +35,27 @@ To get started with the course materials, please clone the repository and follow
 
 **Info**: If you are using a Mac with M1/2 Chip, you need to ensure that your conda environment is created using rosetta. Otherwise, there will be some issues with the forecasting libraries.
 
-### Automatic setup
+### Automatic setup (only x86)
 ```bash
 git clone https://github.com/LackesLab/summerschool_23.git
 ```
 
-### Manual setup
+```bash
+conda env create -f environment.yml
+conda activate summerschool
+```
+
+### Manual setup (Mac M1/M2)
+```bash
+CONDA_SUBDIR=osx-64 conda create -n summerschool python=3.11
+conda activate summerschool
+conda config --env --set subdir osx-64
+conda install -c conda-forge -c pytorch u8darts-all
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge statsmodels
+```
+
+### Manual / Pip install
 ```bash
 git clone https://github.com/LackesLab/summerschool_23.git
 ```
