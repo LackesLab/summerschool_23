@@ -45,12 +45,33 @@ conda env create -f environment.yml
 conda activate summerschool
 ```
 
+### Automatic Setup 
+
+#### X86
+```bash
+conda create -n summerschool python=3.10
+conda activate summerschool
+
+pip install poetry
+poetry install
+```
+
+#### Mac M1/M2
+```bash
+CONDA_SUBDIR=osx-64 conda create -n summerschool python=3.10
+conda activate summerschool
+conda config --env --set subdir osx-64
+
+pip install poetry
+poetry install
+```
+
 ### Manual setup (Mac M1/M2)
 ```bash
 CONDA_SUBDIR=osx-64 conda create -n summerschool python=3.11
 conda activate summerschool
 conda config --env --set subdir osx-64
-conda install -c conda-forge -c pytorch u8darts-all
+conda install -c conda-forge -c pytorch u8darts-all jupyterlab
 conda install -c conda-forge jupyterlab
 conda install -c conda-forge statsmodels
 ```
